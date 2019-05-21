@@ -24,12 +24,12 @@
 
   <dependencies>
     <dependency>
-      <groupId>org.reficio</groupId>
+       <groupId>com.xkcoding</groupId>
       <artifactId>soap-common</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.reficio</groupId>
+       <groupId>com.xkcoding</groupId>
       <artifactId>soap-legacy</artifactId>
       <version>${project.version}</version>
     </dependency>

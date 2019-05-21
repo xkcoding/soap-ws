@@ -1,5 +1,23 @@
 # soap-ws [![Build Status](http://img.shields.io/travis/reficio/soap-ws.svg)](http://travis-ci.org/reficio/soap-ws)
 
+
+
+> **ATTENTIONS:**
+>
+> This project is forked from https://github.com/reficio/soap-ws
+>
+> I modified groupId to make this powerful library can be upload to https://search.maven.org/
+>
+> So this library can be used by more people.
+>
+> 注意：
+>
+> 这个仓库是从 https://search.maven.org/ fork 过来的。
+>
+> 为了可以将此库传至中央仓库 https://search.maven.org/ ，我修改了 maven 的 groupId 。
+>
+> 这样，方便更多人使用这个强大的库。
+
 ## A lightweight and easy-to-use Java library to handle SOAP on a purely XML level.
 
 ### Intro
@@ -134,7 +152,7 @@ Let's provide the CurrencyConverter Web-Service that returns random results (com
    		.build();
     server.registerRequestResponder("/currencyConvertor", new AutoResponder(builder));
     server.start();
-``` 
+```
 
 That's more or less what you need to generate a SOAP message and consume/provide a Web-Service.
 
@@ -267,7 +285,7 @@ AbstractResponder uses our implementation of the SoapOperationMatcher that match
 * SOAP Action mapping
 * RCP bindings are matched using single top-level tag with the name of the invoked operation
 * Document bindings are matched by input types and then by input names
- 
+
 Having the SoapOperation object provided by the AbstractResponder you can easily generate and modify the response that you create using SoapBuilder that available in the responder as a instance field called builder.
 
 That's a lot of stuff. I hope you enjoyed it! Have a look at the examples located in the soap-examples project. Try it out now and leave send us some feedback!
